@@ -12,7 +12,7 @@ class Bird {
     public static $egg_num = 0;
 
     public static function create() {
-        $obj = new self;
+        $obj = new static;
         static::$instance_count++;
 
         return $obj;
